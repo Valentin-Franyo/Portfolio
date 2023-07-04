@@ -23,14 +23,14 @@
   <body>
     <!--TODO:HEADER -->
     <!--logo,nav:about,blog,contact, social-media icons-->
-    <header id="header">
-      <div><a href="#home">FV</a></div>
-      <nav>
+    <header class="index-header" id="header">
+      <div class="icon-fv"><a href="#home">FV</a></div>
+      <nav class="navigation">
         <ul>
-          <li><a href="./about.html">about </a></li>
-          <li><a href="./blog.html">blog</a></li>
-          <li><a href="./contact.html">contact</a></li>
-          <li><a href="#projects">projects</a></li>
+          <li class="nav-button"><a href="./about.html">about </a></li>
+          <li class="nav-button"><a href="./blog.html">blog</a></li>
+          <li class="nav-button"><a href="./contact.html">contact</a></li>
+          <li class="nav-button"><a href="#projects">projects</a></li>
         </ul>
         <a
           href="https://www.instagram.com/valentin_franyo/?hl=hu"
@@ -48,11 +48,11 @@
     </header>
     <!--TODO: MAIN-->
     <!--home,image,skills,portfolio-projects,-->
-    <main>
+    <main class="index-main">
       <!--fooldal-->
       <section class="home">
-        <div>
-          <h1>
+        <div class="container-one">
+          <h1 class="index-h1">
             <span class="left">Frontend</span>
             <span class="right">Backend</span>
           </h1>
@@ -62,24 +62,24 @@
           </p>
         </div>
         <!--kep-->
-        <img src="./assets/img/img.png" alt="image of me" />
+        <img class="index-profil-img" src="./assets/img/img.png" alt="image of me" />
 
-        <h2>Frontend kills</h2>
+        <h2 class="frontend-skills">Frontend skills</h2>
         <div>
           <i class="fa-brands fa-html5"></i>
           <i class="fa-brands fa-css3"></i>
         </div>
-        <h2>Backend skills</h2>
+        <h2 class="backend-skills">Backend skills</h2>
         <div>
           <i class="fa-regular fa-list-check"></i>
         </div>
       </section>
       <!--TODO: projects-->
-      <section id="projects">
+      <section class="projects" id="projects">
         <h2>Projects</h2>
         <div class="project-container">
-          <img src="./assets/img/loading.jpg" alt="Portfolio" width="500" />
-          <p>The portfolio projects are in progress, please be patient.</p>
+          <img class="portfolio-picture" src="./assets/img/loading.jpg" alt="Portfolio" width="500" />
+          <p class="portfolio-project-paragraph">The portfolio projects are in progress, please be patient.</p>
           <div>
             <a
               href="https://github.com/Valentin-Franyo/Portfolio"
@@ -91,8 +91,8 @@
             <i class="fa-sharp fa-solid fa-arrow-right"></i>
           </div>
           <div class="project-container">
-            <img src="./assets/img/loading.jpg" alt="Portfolio" width="500" />
-            <p>The portfolio projects are in progress, please be patient.</p>
+            <img class="portfolio-picture" src="./assets/img/loading.jpg" alt="Portfolio" width="500" />
+            <p class="portfolio-project-paragraph">The portfolio projects are in progress, please be patient.</p>
             <div>
               <a
                 href="https://github.com/Valentin-Franyo/Portfolio"
@@ -104,8 +104,8 @@
               <i class="fa-sharp fa-solid fa-arrow-right"></i>
             </div>
             <div class="project-container">
-              <img src="./assets/img/loading.jpg" alt="Portfolio" width="500" />
-              <p>The portfolio projects are in progress, please be patient.</p>
+              <img class="portfolio-picture" src="./assets/img/loading.jpg" alt="Portfolio" width="500" />
+              <p class="portfolio-project-paragraph">The portfolio projects are in progress, please be patient.</p>
               <div>
                 <a
                   href="https://github.com/Valentin-Franyo/Portfolio"
@@ -121,8 +121,8 @@
     </main>
     <!--TODO: FOOTER-->
     <!--info,back to the top-->
-    <footer>
-      <p>Copyright <span>&copy;</span>2023 Valentin Franyo</p>
+    <footer class="footer">
+      <p class="copyright-paragraph">Copyright <span>&copy;</span>2023 Valentin Franyo</p>
       <a href="#header"><i class="fa-sharp fa-solid fa-arrow-up"></i></a>
     </footer>
   </body>

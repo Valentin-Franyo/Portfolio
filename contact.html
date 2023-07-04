@@ -20,12 +20,13 @@
     />
   </head>
   <body>
-    <header id="header5">
-      <div><a href="#home">FF</a></div>
+    <header class="contact-header" id="header5">
+      <div class="icon-fv"><a href="#home">FF</a></div>
       <ul>
-        <li><a href="./index.html">home</a></li>
-        <li><a href="./about.html">about</a></li>
-        <li><a href="./blog.html">blog</a></li>
+        <li class="nav-button"><a href="./index.html">home</a></li>
+        <li class="nav-button"><a href="./about.html">about</a></li>
+        <li class="nav-button"><a href="./blog.html">blog</a></li>
+        <li class="nav-button"><a href="#projects">projects</a></li>
       </ul>
       <a
         href="https://www.instagram.com/valentin_franyo/?hl=hu"
@@ -40,10 +41,10 @@
         ><i class="fa-brands fa-github"></i
       ></a>
     </header>
-    <section>
+    <section class="contact-section">
       <div>
-        <h2>Contact</h2>
-        <p>
+        <h2 class="contact-h2">Contact</h2>
+        <p class="contact-paragraph">
           Feel free to reach out to me on social media or via email. I look
           forward to receiving your application with pleasure.
         </p>
@@ -72,21 +73,29 @@
       </div>
     </section>
     <section>
-      <h2>Send me an email</h2>
-      <div>
+      <h2 class="contact-h2-email">Send me an email</h2>
+      <div class="contact-form">
         <form action="https://formspree.io/f/xaygwwby" method="post">
-          <label for="name">Name</label>
-          <input type="text" name="Name" id="name" />
-          <label for="email">Email</label>
-          <input type="email" name="Email" id="email" />
-          <label for="message">Message</label>
-          <textarea name="Message" id="message" cols="30" rows="10"></textarea>
-          <button type="submit">Send</button>
+          <label class="label-name" for="name">Name</label>
+          <input class="input-name" type="text" name="Name" id="name" />
+          <label class="label-email" for="email">Email</label>
+          <input class="input-email" type="email" name="Email" id="email" />
+          <label class="label-message" for="message">Message</label>
+          <textarea
+            class="textarea"
+            name="Message"
+            id="message"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <button class="button-send" type="submit">Send</button>
         </form>
       </div>
     </section>
-    <footer>
-      <p>Copyright <span>&copy;</span>2023 Valentin Franyo</p>
+    <footer class="footer">
+      <p class="copyright-paragraph">
+        Copyright <span>&copy;</span>2023 Valentin Franyo
+      </p>
       <a href="#header5"><i class="fa-sharp fa-solid fa-arrow-up"></i></a>
     </footer>
   </body>

@@ -20,34 +20,43 @@
     />
   </head>
   <body>
-    <header id="header2">
-      <div><a href="#home">FF</a></div>
-      <ul>
-        <li><a href="./index.html">home</a></li>
-        <li><a href="./blog.html">blog</a></li>
-        <li><a href="./contact.html">contact</a></li>
-      </ul>
-      <a
-        href="https://www.instagram.com/valentin_franyo/?hl=hu"
-        target="_blank"
-      >
-        <i class="fa-brands fa-instagram"></i>
-      </a>
-      <a href="https://m.facebook.com/aleen.csakugy/" target="_blank"
-        ><i class="fa-brands fa-facebook"></i>
-      </a>
-      <a href="https://github.com/Valentin-Franyo" target="_blank"
-        ><i class="fa-brands fa-github"></i
-      ></a>
+    <header class="about-header" id="header2">
+      <div class="icon-fv"><a href="#home">FV</a></div>
+      <nav class="navigation">
+        <ul>
+          <li class="nav-button"><a href="./index.html">home</a></li>
+          <li class="nav-button"><a href="./blog.html">blog</a></li>
+          <li class="nav-button"><a href="./contact.html">contact</a></li>
+          <li class="nav-button"><a href="#projects">projects</a></li>
+        </ul>
+        <a
+          href="https://www.instagram.com/valentin_franyo/?hl=hu"
+          target="_blank"
+        >
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://m.facebook.com/aleen.csakugy/" target="_blank"
+          ><i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="https://github.com/Valentin-Franyo" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+      </nav>
     </header>
 
-    <main>
-      <div><img src="./assets/img/img.png" alt="" /></div>
-      <h1>ABOUT.</h1>
-      <p class="intro">
+    <main class="about-main">
+      <div>
+        <img
+          class="about-profil-img"
+          src="./assets/img/img.png"
+          alt="image of me"
+        />
+      </div>
+      <h1 class="about-h1">ABOUT.</h1>
+      <p class="about-intro">
         My name is Valentin, and I was born in Veszprém, Hungary.
       </p>
-      <p class="descripcion">
+      <p class="about-descripcion">
         I am a fresh career changer who commutes between Hungary and Germany.
         Currently, I am studying frontend development, but in the future, I will
         also learn backend development.When I'm not typing on the keyboard, I
@@ -58,8 +67,10 @@
       <!--linkelt kepek-->
     </div>
 
-    <footer>
-      <p>Copyright <span>&copy;</span>2023 Valentin Franyo</p>
+    <footer class="footer">
+      <p class="copyright-paragraph">
+        Copyright <span>&copy;</span>2023 Valentin Franyo
+      </p>
       <a href="#header2"><i class="fa-sharp fa-solid fa-arrow-up"></i></a>
     </footer>
   </body>
