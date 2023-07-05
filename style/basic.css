@@ -13,17 +13,27 @@
 --border-color-tertiary:white;
 }
 
-.light-mode{
-    --canvas-color: white;
+.light-mode {
+  --canvas-color: white;
 
-    --text-color-primary: black;  
-    --text-color-secondary:red;
-  
-    --color-ui-primary: red;
-    --color-ui-secondary: red;
-    --color-ui-tertiary: black;
-  
-    --border-color-primary:white;
-    --bordeer-color-secondary:red;
-   --border-color-tertiary:white;
+  --text-color-primary: black;
+  --text-color-secondary: red;
+
+  --color-ui-primary: red;
+  --color-ui-secondary: red;
+  --color-ui-tertiary: black;
+
+  --border-color-primary: white;
+  --border-color-secondary: red;
+  --border-color-tertiary: white;
 }
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+ }
+
+ body {
+    background:var(--canvas-color)
+ }
