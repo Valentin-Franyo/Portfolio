@@ -1,0 +1,29 @@
+:root{
+--canvas-color:black;
+
+--text-color-primary: white;
+--text-color-secondary: red;
+
+--color-ui-primary:white;
+--color-ui-secondary:Red;
+--color-ui-tertiary:black;
+
+--border-color-primary:white;
+--border-color-secondary:red;
+--border-color-tertiary:white;
+}
+
+.light-mode{
+    --canvas-color: white;
+
+    --text-color-primary: black;  
+    --text-color-secondary:red;
+  
+    --color-ui-primary: red;
+    --color-ui-secondary: red;
+    --color-ui-tertiary: black;
+  
+    --border-color-primary:white;
+    --bordeer-color-secondary:red;
+   --border-color-tertiary:white;
+}
