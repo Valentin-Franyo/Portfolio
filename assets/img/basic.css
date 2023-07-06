@@ -1,0 +1,68 @@
+:root {
+    --hatter: aqua;
+    --betu-egy: white;
+    --betu-ketto: black;
+    --felhasznalo-egy: black;
+    --felhasznalo-ketto: white;
+    --felhasznalo-harom: red;
+    --keret-egy: aqua;
+    --keret-ketto: deepskyblue;
+    --keret-harom: blue;
+}
+
+.light-mode {
+    --hatter: white;
+    --betu-egy: black;
+    --betu-ketto: black;
+    --felhasznalo-egy: black;
+    --felhasznalo-ketto: white;
+    --felhasznalo-harom: red;
+    --keret-egy: white;
+    --keret-ketto: deepskyblue;
+    --keret-harom: blue;
+}
+
+body {
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: var(--hatter);
+    color: var(--betu-egy);
+}
+
+body.light-mode {
+    color: var(--hatter);
+}
+
+body.dark-mode {
+    background-image: url(./universe.jpg)
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Space Mono', monospace;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--betu-egy);
+}
+
+h1 {
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}

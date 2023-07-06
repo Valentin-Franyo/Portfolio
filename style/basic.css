@@ -1,39 +1,65 @@
-:root{
---canvas-color:black;
-
---text-color-primary: white;
---text-color-secondary: red;
-
---color-ui-primary:white;
---color-ui-secondary:Red;
---color-ui-tertiary:black;
-
---border-color-primary:white;
---border-color-secondary:red;
---border-color-tertiary:white;
+:root {
+    --hatter: aqua;
+    --betu-egy: white;
+    --betu-ketto: black;
+    --felhasznalo-egy: black;
+    --felhasznalo-ketto: white;
+    --felhasznalo-harom: red;
+    --keret-egy: aqua;
+    --keret-ketto: deepskyblue;
+    --keret-harom: blue;
 }
 
 .light-mode {
-  --canvas-color: white;
-
-  --text-color-primary: black;
-  --text-color-secondary: red;
-
-  --color-ui-primary: red;
-  --color-ui-secondary: red;
-  --color-ui-tertiary: black;
-
-  --border-color-primary: white;
-  --border-color-secondary: red;
-  --border-color-tertiary: white;
+    --hatter: white;
+    --betu-egy: black;
+    --betu-ketto: black;
+    --felhasznalo-egy: black;
+    --felhasznalo-ketto: white;
+    --felhasznalo-harom: red;
+    --keret-egy: white;
+    --keret-ketto: deepskyblue;
+    --keret-harom: blue;
 }
- *{
+
+body {
+    background-attachment: fixed;
+    background-size: cover;
+    color: var(--betu-egy);
+    background-color: var(--hatter);
+    background-image: url(universe.jpg);
+}
+
+body.light-mode {
+    background-image: url(./sky.jpg);
+}
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
- }
+    font-family: 'Space Mono', monospace;
+}
 
- body {
-    background:var(--canvas-color)
- }
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--betu-egy);
+}
+
+h1 {
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
