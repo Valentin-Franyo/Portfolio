@@ -1,34 +1,79 @@
  header{
+    background-color:var(--betu-ketto);
     position: fixed;
     width: 100%;
-    height: 8vh;
-    padding: 1rem;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 99;
-    background-color: black;
+    padding: 1rem;
 }
 
-.icon-fv{
-   height: 32px;
-   width: 32px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   border: 1px solid white;
-   transition: 0.5s;
+/*  .icon-fv{
+    background-color: green;
+    height: 32px;
+    width: 32px;
+    display: flex;
+    
+}  */
+
+#ikon{
+
+    height: 50px;
+    width: 50px;
+    border: 1px solid;
+    transition: 0.5s;
 }
 
-.icon-fv:hover {
-    border: 1px solid red;
-} 
-
-.navigation ul {
-        display: flex;
-        justify-content:space-between;
-        align-items: center;
-      
-      
+#ikon:hover {
+    color:var(--felhasznalo-harom);
+    
 }
 
- 
+.navigation{
+display: flex;
+}
+
+.header-checkbox{
+display: none;
+}
+
+.header-label{
+
+    display: block;
+    width: 24px;
+    height: 20px;
+    /* padding: 1rem; */
+   cursor: pointer;
+}
+
+.checkbox-gomb {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+
+.checkbox-gomb::after,
+.checkbox-gomb::before,
+.checkbox-vonal{
+    display: block;
+    content: "";
+    width: 100%;
+    height: 3px;
+ background-color: var(--betu-egy);
+    
+}
+
+.header-container{
+
+}
+
+.nav-button{
+
+}
+
+.light-mode-container{
+
+}

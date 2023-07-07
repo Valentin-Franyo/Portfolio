@@ -35,9 +35,20 @@
     <!--TODO:HEADER -->
     <!--logo,nav:about,blog,contact, social-media icons-->
     <header class="index-header" id="header">
-      <div class="icon-fv"><a href="#home">FV</a></div>
+      <div class="icon-fv">
+        <a href="#home">
+          <img src="./assets/icon/logoka.png" alt="logo" id="ikon"
+        /></a>
+      </div>
       <nav class="navigation">
-        <ul>
+        <input type="checkbox" id="header-checkbox" class="header-checkbox" />
+        <label for="header-checkbox" class="header-label">
+          <span class="checkbox-gomb">
+            <span class="checkbox-vonal"></span>
+          </span>
+        </label>
+
+        <ul class="header-container">
           <li class="nav-button"><a href="./about.html">about </a></li>
           <li class="nav-button"><a href="./blog.html">blog</a></li>
           <li class="nav-button"><a href="./contact.html">contact</a></li>
