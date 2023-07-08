@@ -74,7 +74,7 @@ display: none;
 
 .header-container{
     position: absolute;
-    background-color: var(--keret-ketto);
+    background-color:rgba(0, 0, 0, 0.835);
     top: 8vh;
     left: 200vh;
     right: 0;
@@ -100,8 +100,8 @@ display: none;
 }
 
 .nav-button:hover {
-    background: var(--betu-ketto);
-    color: var(--keret-ketto);
+    background:rgba(0, 191, 255, 0.482);
+   
 }
 
 .light-mode-container{
@@ -116,6 +116,7 @@ display: none;
   
     .sajat-ikon {
       align-self: center;
+      margin: 1rem;
     }
   
     .header-label {
