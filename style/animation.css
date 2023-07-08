@@ -1,0 +1,174 @@
+
+  
+  .anime {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    transition: all 300ms cubic-bezier(.61, .01, .42, 1);
+    cursor: pointer;
+    background: transparent;
+    border: 0px;
+  }
+  
+  .animation {
+    height: 0px;
+    border: 1.5px solid #fff;
+    width: 22px;
+    display: block;
+    position: absolute;
+    transition: all 300ms cubic-bezier(.61, .01, .42, 1);
+    background:#fff;
+  }
+  
+  .anime:hover {
+    transition-delay: 100ms;
+    transform: scale(1.1);
+  }
+  
+  .anime:hover div:nth-child(3):before {
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background: #F26451;
+  }
+  
+  .anime:hover div {
+    border: 2px solid #fff;
+    height: 9px;
+    border-radius: 50%;
+    margin-left: -1px;
+    margin-top: 2px;
+    animation: atom 300ms linear 1;
+    width: 25px;
+    top: 0px;
+    background:transparent;
+  }
+  
+  .anime:focus {
+    outline: 0px;
+  }
+  
+  .animation:nth-child(1) {
+    top: 0px;
+  }
+  
+  .animation:nth-child(2) {
+    top: 8px;
+  }
+  
+  .animation:nth-child(3) {
+    top: 16px;
+  }
+  
+  .animation:nth-child(3):before {
+    opacity: 0;
+    animation: ball 1.5s linear infinite;
+    content: '';
+    border: 2px solid #fff;
+    display: block;
+    position: relative;
+    top: 0.25px;
+  }
+  
+  .anime:hover div:nth-child(1) {
+    transform: rotate(-33deg);
+  }
+  
+  .anime:hover div:nth-child(2) {
+    transform: rotate(90deg);
+  }
+  
+  .anime:hover div:nth-child(3) {
+    transform: rotate(33deg);
+  }
+  
+  .anime:hover div:nth-child(3):before {
+    opacity: 1;
+    transition: opacity 600ms cubic-bezier(.61, .01, .42, 1);
+    ;
+  }
+  
+  .anime:active:hover div:nth-child(3):before,
+  .anime:active div:nth-child(3):before,
+  .anime:active div:nth-child(2) {
+    opacity: 0;
+    transition: all 200ms;
+  }
+  
+  .anime:active div {
+    border: 1.5px solid #fff;
+    height: 0px;
+    border-radius: 0%;
+    margin-left: -1px;
+    margin-top: 6px;
+    animation: division 300ms linear 1;
+    width: 25px;
+    top: 0px;
+  }
+  
+  .anime:active div:nth-child(2) {
+    width: 0px;
+  }
+  
+  .anime:active div:nth-child(3) {
+    transform: rotate(45deg);
+  }
+  
+  .anime:active div:nth-child(1) {
+    transform: rotate(-45deg);
+  }
+  
+  @keyframes atom {
+    0% {
+      transform: rotate(180deg);
+    }
+  }
+  
+  @keyframes division {
+    0% {
+      transform: rotate(180deg);
+    }
+  }
+  
+  @keyframes ball {
+    0% {
+      left: -20%;
+      top: 10%;
+    }
+    10% {
+      left: 10%;
+      top: -35%;
+    }
+    25% {
+      left: 45%;
+      top: -50%;
+    }
+    40% {
+      left: 80%;
+      top: -20%;
+    }
+    50% {
+      left: 98%;
+      top: 18%;
+    }
+    60% {
+      left: 80%;
+      top: 50%;
+    }
+    75% {
+      left: 45%;
+      top: 80%;
+    }
+    90% {
+      left: 0%;
+      top: 60%;
+    }
+    100% {
+      left: -20%;
+      top: 10%;
+    }
+  }

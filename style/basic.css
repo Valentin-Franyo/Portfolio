@@ -1,3 +1,8 @@
+ 
+ 
+ 
+ 
+ 
  :root {
     --hatter: aqua;
     --betu-egy: white;
@@ -7,7 +12,7 @@
     --felhasznalo-harom: red;
     --keret-egy: aqua;
     --keret-ketto: deepskyblue;
-    --keret-harom: blue;
+    --keret-harom:blue;
 }
 
 .light-mode {

@@ -1,22 +1,17 @@
  header{
-    background-color:var(--betu-ketto);
+    background-color: var(--betu-ketto);
     position: fixed;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
+    height: 8vh;
+   
 }
 
-/*  .icon-fv{
-    background-color: green;
-    height: 32px;
-    width: 32px;
-    display: flex;
-    
-}  */
 
-#ikon{
+.sajat-ikon{
 
     height: 50px;
     width: 50px;
@@ -24,7 +19,7 @@
     transition: 0.5s;
 }
 
-#ikon:hover {
+.sajat-ikon:hover {
     color:var(--felhasznalo-harom);
     
 }
@@ -38,14 +33,16 @@ display: none;
 }
 
 .header-label{
-
-    display: block;
+      display: block;
     width: 24px;
     height: 20px;
     /* padding: 1rem; */
    cursor: pointer;
+  
 }
 
+
+ 
 .checkbox-gomb {
     display: flex;
     flex-direction: column;
@@ -54,7 +51,6 @@ display: none;
     height: 100%;
 }
 
-
 .checkbox-gomb::after,
 .checkbox-gomb::before,
 .checkbox-vonal{
@@ -62,18 +58,91 @@ display: none;
     content: "";
     width: 100%;
     height: 3px;
- background-color: var(--betu-egy);
-    
+    background-color: var(--betu-egy);   
+    transition: 0.6s;
+}
+
+ 
+.header-label:hover .checkbox-vonal{
+   transform: scaleX(0.8);
+}
+
+.header-label:hover .checkbox-gomb::after,
+.header-label:hover .checkbox-gomb::before {
+    transform: scaleX(0.6);
 }
 
 .header-container{
+    position: absolute;
+    background-color: var(--keret-ketto);
+    top: 8vh;
+    left: 200vh;
+    right: 0;
+    height: 92vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.8;
+}
+
+.header-checkbox:checked ~ .header-container {
+    left: 0;
+  }
+
+
+.nav-button {
+    display: block;
+    width: 100vw;
+    text-align: center;
+    padding: 1rem;
 
 }
 
-.nav-button{
-
+.nav-button:hover {
+    background: var(--betu-ketto);
+    color: var(--keret-ketto);
 }
 
 .light-mode-container{
-
+    margin-top: 1rem;
 }
+
+@media (min-width: 768px) {
+    header {
+      align-items: stretch;
+      padding: 0 1rem;
+    }
+  
+    .sajat-ikon {
+      align-self: center;
+    }
+  
+    .header-label {
+      display: none;
+    }
+  
+    .header-container {
+      position: static;
+      width: auto;
+      height: 100%;
+      flex-direction: row;
+      justify-content: center;
+      align-items: stretch;
+      transition: 0s;
+    }
+  
+    .nav-button {
+      width: auto;
+      height: 100%;
+      padding: 0 2rem;
+      display: flex;
+      align-items: center;
+    }
+  
+    .light-mode-container {
+      align-self: center;
+      margin-top: 0;
+      margin-left: 0.5rem;
+    }
+  }
