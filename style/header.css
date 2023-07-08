@@ -13,8 +13,8 @@
 
 .sajat-ikon{
 
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     border: 1px solid;
     transition: 0.5s;
 }
@@ -42,7 +42,6 @@ display: none;
 }
 
 
- 
 .checkbox-gomb {
     display: flex;
     flex-direction: column;
@@ -86,6 +85,7 @@ display: none;
     transition: 0.8;
 }
 
+
 .header-checkbox:checked ~ .header-container {
     left: 0;
   }
@@ -123,7 +123,7 @@ display: none;
       display: none;
     }
   
-    .header-container {
+    .header-container  {
       position: static;
       width: auto;
       height: 100%;
@@ -146,4 +146,21 @@ display: none;
       margin-top: 0;
       margin-left: 0.5rem;
     }
+    .social-icons{
+    
+
+        
+    }
   }
+
+   .social-icons{
+    font-size: 20px;
+    position: absolute;
+    top:30%;
+    left:30%;
+    transform: translate(-50%, -50%);
+    padding: 2rem;
+    margin: 1rem;
+  }
+ 
+
